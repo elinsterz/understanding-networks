@@ -1,0 +1,253 @@
+@font-face {
+    font-family:'SharpGroteskBold21';
+    src: url('fonts/SharpGroteskBold21.eot');
+    src: url('fonts/SharpGroteskBold21.ttf');
+    format('truetype');
+}
+
+@font-face {
+    font-family:'MaaxMono-Regular';
+    src: url('fonts/MaaxMono-Regular.eot');
+    src: url('fonts/MaaxMono-Regular.ttf');
+    format('truetype');
+}
+
+/* div{
+    border: 0.1px red solid;
+} */
+
+html, body{
+    background-color: #ECECEC !important;
+    box-sizing: border-box;
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+/* NAVBAR */
+#navbar-header{
+    background-color: black;
+    color: white;
+    font-family: 'SharpGroteskBold21';
+    font-size: 1.35vw;
+    text-transform: uppercase;
+    letter-spacing: 0.1vw;
+
+    position: fixed; /* Set the navbar to fixed position */
+    top: 0; /* Position the navbar at the top of the page */
+    width: 100%; /* Full width */
+    height: 7vh;
+    z-index: 3;
+}
+
+#nav-container{
+    padding-top: 2vh;
+    align-items: center;
+    margin:auto;
+    position: fixed; /* Set the navbar to fixed position */
+    top: 0; /* Position the navbar at the top of the page */
+    width: 100%; /* Full width */
+    
+}
+
+#nav-home>a, #nav-school>a, #nav-phone>a{
+    color: white !important;
+    text-decoration: none;
+}
+
+#nav-home>a:hover{
+    color: #F8E71C!important;
+    text-decoration: none;
+}
+
+#nav-home>a:active{
+    color: #F8E71C!important;
+    text-decoration: none;
+}
+
+#nav-school>a:hover{
+    color: #B15EDF!important;
+    text-decoration: none;
+}
+
+#nav-phone>a:hover, #nav-phone>a:active{
+    color: #92FAE3!important;
+    text-decoration: none;
+}
+
+
+
+/* LEFT MAP DIV */
+
+/* for home page -left side div */
+#map-destination-div{
+    background-color: #F8E71C;
+    border-right: 0.45vw black solid;
+    height: 100vh;
+    padding: 5%;
+    z-index: 1;
+    position: fixed; /* Set the navbar to fixed position */
+    top: 0; /* Position the navbar at the top of the page */
+    width: 40%; 
+    height: 100vh;
+    z-index: 2;
+}
+
+/* for school page -left side div */
+#school-destination-div{
+    background-color: #B15EDF;
+    border-right: 0.45vw black solid;
+    height: 100vh;
+    padding: 5%;
+    z-index: 1;
+    position: fixed; /* Set the navbar to fixed position */
+    top: 0; /* Position the navbar at the top of the page */
+    width: 40%; 
+    height: 100vh;
+    z-index: 2;
+}
+
+/* for phone page -left side div */
+#phone-destination-div{
+    background-color: #92FAE3;
+    border-right: 0.45vw black solid;
+    height: 100vh;
+    padding: 5%;
+    z-index: 1;
+    position: fixed; /* Set the navbar to fixed position */
+    top: 0; /* Position the navbar at the top of the page */
+    width: 40%; 
+    height: 100vh;
+    z-index: 2;
+}
+
+#map-container{
+    margin-top: 7vh;
+    font-family: 'SharpGroteskBold21';
+    font-size: 1.75vw;
+    color: black;
+    align-items: center;
+}
+
+#overview-div{
+    height: 5vh;
+}
+
+#overview-div, #destination-div{
+    vertical-align: bottom;
+    align-items: center;
+    margin:auto;
+    border-bottom: 0.45vw solid black;
+    /* width: 18vw; */
+    float: left;
+    /* padding-bottom: 7vh; */
+    align-items: center;
+    justify-content: center;
+    height: 30px;
+    display: block;
+}
+
+#spacer{
+    height: 15vh;
+}
+
+#destination-div{
+    /* border: 1px solid red; */
+    padding-bottom: 2%;
+}
+
+
+
+#drop-down-triangle{
+    width: 1.5vw;
+}
+
+
+/* RIGHT DIRECTION DIV */
+
+/* div{
+    border: 1px solid red;
+} */
+
+/* #direction-div{
+    background-color: #ECECEC;
+    height: 100vh;
+    margin-top: 7vh;
+    overflow: scroll;
+    z-index: 1;
+    position: relative;
+    left: 45vw;
+} */
+
+#youtube-direction-div{
+    background-color: #ECECEC;
+    height: 100vh;
+    /* padding-left: 5%; */
+    margin-top: 7vh;
+    overflow: scroll;
+    z-index: 1;
+    position: relative;
+    left: 45vw;
+}
+
+#gmail-direction-div{
+    background-color: #ECECEC;
+    height: 100vh;
+    /* padding-left: 5%; */
+    margin-top: 7vh;
+    overflow: scroll;
+    z-index: 1;
+    position: relative;
+    left: 45vw;
+}
+
+.hop-div{
+    margin-top: 5vh;
+    /* padding: 2%; */
+}
+
+.hop-circle{
+    display: inline-block;
+}
+
+.hop-ip{
+    font-family: 'SharpGroteskBold21';
+    font-size: 1.755vw;
+    color: black;
+    line-height: 2.5vh;
+}
+
+.hop-isp, .hop-city{
+    font-family: 'MaaxMono-Regular';
+    font-size: 1.15vw;
+    color: black;
+    height: 0.5vh;
+}
+
+.hop-index{
+    font-family: 'MaaxMono-Regular';
+    font-size: 0.75vw;
+    color: black;
+}
+
+sup{
+    font-family: 'MaaxMono-Regular';
+    font-size: 0.75vw;
+    color: black;
+    vertical-align: super;
+    font-size: smaller;
+    padding-left: 2%;
+}
+
+.circle-line-img {
+    padding-right: 5vw;
+    display: inline-block;
+}
+
+.hop-stop {
+    display: inline-block;
+    width: 35vw;
+    padding: none;
+    vertical-align: top;
+    padding-top: 2%;
+    padding-bottom: 10%;
+}

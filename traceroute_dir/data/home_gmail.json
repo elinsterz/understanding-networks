@@ -1,0 +1,82 @@
+[
+    {
+        "IP": "192.168.1.1",
+        "City": "New York City, New York",
+        "Country": "United States",
+        "Latitude": "40.7143",
+        "Longitude": "-74.0060",
+        "ISP": "Verizon Communications Inc."
+    },
+    {
+        "IP": "***",
+        "City": "***",
+        "Country": "***",
+        "Latitude": "***",
+        "Longitude": "***",
+        "ISP": "***"
+    },
+    {
+        "IP": "100.41.131.157",
+        "City": "New York City, New York",
+        "Country": "United States",
+        "Latitude": "40.7143",
+        "Longitude": "-74.0060",
+        "ISP": "Verizon Communications Inc."
+    },
+    {
+        "IP": "***",
+        "City": "***",
+        "Country": "***",
+        "Latitude": "***",
+        "Longitude": "***",
+        "ISP": "***"
+    },
+    {
+        "IP": "140.222.1.45",
+        "City": "New York City, New York",
+        "Country": "United States",
+        "Latitude": "40.7143",
+        "Longitude": "-74.0060",
+        "ISP": "ANS Core Systems Inc."
+    },
+    {
+        "IP": "72.14.208.130",
+        "City": "Amsterdam, Noord-Holland",
+        "Country": "Netherlands",
+        "Latitude": "52.3740",
+        "Longitude": "4.8897",
+        "ISP": "Google LLC"
+    },
+    {
+        "IP": "***",
+        "City": "***",
+        "Country": "***",
+        "Latitude": "***",
+        "Longitude": "***",
+        "ISP": "***"
+    },
+    {
+        "IP": "108.170.237.212",
+        "City": "Amsterdam, Noord-Holland",
+        "Country": "Netherlands",
+        "Latitude": "52.3740",
+        "Longitude": "4.8897",
+        "ISP": "Google LLC"
+    },
+    {
+        "IP": "108.170.248.2",
+        "City": "Mountain View, California",
+        "Country": "United States",
+        "Latitude": "37.4060",
+        "Longitude": "-122.0785",
+        "ISP": "Google LLC"
+    },
+    {
+        "IP": "172.217.10.101",
+        "City": "Mountain View, California",
+        "Country": "United States",
+        "Latitude": "37.4060",
+        "Longitude": "-122.0785",
+        "ISP": "Google LLC"
+    }
+]

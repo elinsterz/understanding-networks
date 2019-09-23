@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Traceroute Directions</title>
+
+    <!--Bootstrap-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css"
+        integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+
+    <!--p5js script-->
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.7.3/p5.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.7.3/addons/p5.dom.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.7.3/addons/p5.sound.min.js"></script> -->
+
+    <!--Stylesheet-->
+    <link rel="stylesheet" href="style/style.css">
+</head>
+
+<body>
+    <!--HEADER NAV-->
+    <nav id='navbar-header' class='navbar navbar-default navbar-fixed-top'>
+        <div id='nav-container' class="container">
+            <div id='nav-content' class='row'>
+                <div id='nav-title' class='col-6'>Traceroute Map</div>
+                <div id='nav-home' class='col-2'><a href="index.html">Home</a></div>
+                <div id='nav-school' class='col-2'><a href="school.html">School</a></div>
+                <div id='nav-phone' class='col-2'><a href="phone.html">Phone</a></div>
+            </div>
+        </div>
+    </nav>
+
+    <!--CONTENT SECTION -->
+    <div id='all-content-div'>
+        <div class='row'>
+            <div id='phone-destination-div' class='col-5'>
+
+                <!--LEFT DIV-->
+                <div id='map-container' class='container'>
+
+                    <!--DESTINATION DIV-->
+                    <div id='destination-div'>
+                        <p>Destination <span><img src="style/assets/drop_down_triangle.svg" id='drop-down-triangle'
+                                    alt="drop down triangle"></span></p>
+                    </div>
+
+                    <!--SPACER DIV-->
+                    <div id='spacer'>
+                    </div>
+
+                    <!--HOME DIV-->
+                    <div id='overview-div'>
+                        <p>Overview</p>
+                    </div>
+
+                </div>
+            </div>
+
+
+            <!--RIGHT DIV-->
+
+            <!--HOME TO YOUTUBE DIV-->
+            <div id='youtube-direction-div' class='col-7'>
+                <!--HOP DIV 1-->
+                <div class="hop-div">
+                    <img src="style/assets/turq_circle_w_line.svg" class='circle-line-img' alt="purplecircle">
+
+                    <!--HOP 1-->
+                    <div class='hop-stop'>
+                        <p class='hop-ip'>Placeholder<sup class='hop-index'>1</sup></p>
+                        <p class='hop-isp'>Placeholder text</p>
+                        <p class='hop-city'>placeholder text</p>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
