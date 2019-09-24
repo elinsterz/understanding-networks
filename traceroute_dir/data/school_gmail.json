@@ -1,0 +1,154 @@
+[
+    {
+        "IP": "10.18.0.2",
+        "City": "New York City, New York",
+        "Country": "United States",
+        "Latitude": "40.7313",
+        "Longitude": "-73.9901",
+        "ISP": "New York University"
+    },
+    {
+        "IP": "10.254.8.44",
+        "City": "New York City, New York",
+        "Country": "United States",
+        "Latitude": "40.7313",
+        "Longitude": "-73.9901",
+        "ISP": "New York University"
+    },
+    {
+        "IP": "128.122.1.4",
+        "City": "New York City, New York",
+        "Country": "United States",
+        "Latitude": "40.7313",
+        "Longitude": "-73.9901",
+        "ISP": "New York University"
+    },
+    {
+        "IP": "192.168.184.228",
+        "City": "New York City, New York",
+        "Country": "United States",
+        "Latitude": "40.7313",
+        "Longitude": "-73.9901",
+        "ISP": "New York University"
+    },
+    {
+        "IP": "128.122.254.114",
+        "City": "New York City, New York",
+        "Country": "United States",
+        "Latitude": "40.7313",
+        "Longitude": "-73.9901",
+        "ISP": "New York University"
+    },
+    {
+        "IP": "192.168.184.221",
+        "City": "New York City, New York",
+        "Country": "United States",
+        "Latitude": "40.7313",
+        "Longitude": "-73.9901",
+        "ISP": "New York University"
+    },
+    {
+        "IP": "192.76.177.202",
+        "City": "New York City, New York",
+        "Country": "United States",
+        "Latitude": "40.7313",
+        "Longitude": "-73.9901",
+        "ISP": "New York University"
+    },
+    {
+        "IP": "128.122.254.109",
+        "City": "New York City, New York",
+        "Country": "United States",
+        "Latitude": "40.7313",
+        "Longitude": "-73.9901",
+        "ISP": "New York University"
+    },
+    {
+        "IP": "128.122.254.68",
+        "City": "New York City, New York",
+        "Country": "United States",
+        "Latitude": "40.7313",
+        "Longitude": "-73.9901",
+        "ISP": "New York University"
+    },
+    {
+        "IP": "64.86.62.13",
+        "City": "New York City, New York",
+        "Country": "United States",
+        "Latitude": "40.7199",
+        "Longitude": "-74.0050",
+        "ISP": "Tata Communications"
+    },
+    {
+        "IP": "64.86.62.26",
+        "City": "Newark, New Jersey",
+        "Country": "United States",
+        "Latitude": "40.7357",
+        "Longitude": "-74.1724",
+        "ISP": "Tata Communications"
+    },
+    {
+        "IP": "63.243.186.16",
+        "City": "New York City, New York",
+        "Country": "United States",
+        "Latitude": "40.7397",
+        "Longitude": "-74.0008",
+        "ISP": "Tata Communications"
+    },
+    {
+        "IP": "66.110.96.5",
+        "City": "New York City, New York",
+        "Country": "United States",
+        "Latitude": "40.7397",
+        "Longitude": "-74.0008",
+        "ISP": "Tata Communications"
+    },
+    {
+        "IP": "72.14.195.232",
+        "City": "Amsterdam, Noord-Holland",
+        "Country": "Netherlands",
+        "Latitude": "52.3740",
+        "Longitude": "4.8897",
+        "ISP": "Google LLC"
+    },
+    {
+        "IP": "***",
+        "City": "***",
+        "Country": "***",
+        "Latitude": "***",
+        "Longitude": "***",
+        "ISP": "***"
+    },
+    {
+        "IP": "108.170.237.212",
+        "City": "Amsterdam, Noord-Holland",
+        "Country": "Netherlands",
+        "Latitude": "52.3740",
+        "Longitude": "4.8897",
+        "ISP": "Google LLC"
+    },
+    {
+        "IP": "209.85.244.64",
+        "City": "Mountain View, California",
+        "Country": "United States",
+        "Latitude": "37.4060",
+        "Longitude": "-122.0785",
+        "ISP": "Google LLC"
+    },
+    {
+        "IP": "108.170.248.99",
+        "City": "Mountain View, California",
+        "Country": "United States",
+        "Latitude": "37.4060",
+        "Longitude": "-122.0785",
+        "ISP": "Google LLC"
+    },
+    {
+        "IP": "172.217.12.165",
+        "City": "Mountain View, California",
+        "Country": "United States",
+        "Latitude": "37.4060",
+        "Longitude": "-122.0785",
+        "ISP": "Google LLC"
+    }
+]

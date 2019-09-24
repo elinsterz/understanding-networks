@@ -1,0 +1,90 @@
+[
+    {
+        "IP": "192.168.1.1",
+        "City": "New York City, New York",
+        "Country": "United States",
+        "Latitude": "40.7143",
+        "Longitude": "-74.0060",
+        "ISP": "Verizon Communications Inc."
+    },
+    {
+        "IP": "***",
+        "City": "***",
+        "Country": "***",
+        "Latitude": "***",
+        "Longitude": "***",
+        "ISP": "***"
+    },
+    {
+        "IP": "100.41.23.34",
+        "City": "New York City, New York",
+        "Country": "United States",
+        "Latitude": "40.7143",
+        "Longitude": "-74.0060",
+        "ISP": "Verizon Communications Inc."
+    },
+    {
+        "IP": "140.222.3.212",
+        "City": "Dulles, Virginia",
+        "Country": "United States",
+        "Latitude": "38.9517",
+        "Longitude": "-77.4481",
+        "ISP": "ANS Core Systems Inc."
+    },
+    {
+        "IP": "***",
+        "City": "***",
+        "Country": "***",
+        "Latitude": "***",
+        "Longitude": "***",
+        "ISP": "***"
+    },
+    {
+        "IP": "***",
+        "City": "***",
+        "Country": "***",
+        "Latitude": "***",
+        "Longitude": "***",
+        "ISP": "***"
+    },
+    {
+        "IP": "140.222.228.131",
+        "City": "New York City, New York",
+        "Country": "United States",
+        "Latitude": "40.7143",
+        "Longitude": "-74.0060",
+        "ISP": "ANS Core Systems Inc."
+    },
+    {
+        "IP": "173.205.47.145",
+        "City": "New York City, New York",
+        "Country": "United States",
+        "Latitude": "40.7143",
+        "Longitude": "-74.0060",
+        "ISP": "Tinet GmbH"
+    },
+    {
+        "IP": "213.200.114.154",
+        "City": "New York City, New York",
+        "Country": "United States",
+        "Latitude": "40.7143",
+        "Longitude": "-74.0060",
+        "ISP": "GTT Communications Inc."
+    },
+    {
+        "IP": "69.174.23.54",
+        "City": "Texas, Dallas",
+        "Country": "United States",
+        "Latitude": "32.7831",
+        "Longitude": "-96.8067",
+        "ISP": "GTT Communications Inc."
+    },
+    {
+        "IP": "104.27.165.239",
+        "City": "San Francisco, California",
+        "Country": "United States",
+        "Latitude": "37.7757",
+        "Longitude": "-122.3952",
+        "ISP": "CloudFlare Inc."
+    }
+]

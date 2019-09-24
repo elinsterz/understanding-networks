@@ -1,0 +1,98 @@
+[
+    {
+        "IP": "10.18.0.2",
+        "City": "New York City, New York",
+        "Country": "United States",
+        "Latitude": "40.7313",
+        "Longitude": "-73.9901",
+        "ISP": "New York University"
+    },
+    {
+        "IP": "10.254.6.44",
+        "City": "New York City, New York",
+        "Country": "United States",
+        "Latitude": "40.7313",
+        "Longitude": "-73.9901",
+        "ISP": "Verizon Communications Inc."
+    },
+    {
+        "IP": "128.122.1.4",
+        "City": "New York City, New York",
+        "Country": "United States",
+        "Latitude": "40.7313",
+        "Longitude": "-73.9901",
+        "ISP": "New York University"
+    },
+    {
+        "IP": "192.168.184.228",
+        "City": "New York City, New York",
+        "Country": "United States",
+        "Latitude": "40.7313",
+        "Longitude": "-73.9901",
+        "ISP": "Verizon Communications Inc."
+    },
+    {
+        "IP": "128.122.254.114",
+        "City": "New York City, New York",
+        "Country": "United States",
+        "Latitude": "40.7313",
+        "Longitude": "-73.9901",
+        "ISP": "New York University"
+    },
+    {
+        "IP": "192.168.184.221",
+        "City": "New York City, New York",
+        "Country": "United States",
+        "Latitude": "40.7313",
+        "Longitude": "-73.9901",
+        "ISP": "Verizon Communications Inc."
+    },
+    {
+        "IP": "192.76.177.20",
+        "City": "New York City, New York",
+        "Country": "United States",
+        "Latitude": "40.7313",
+        "Longitude": "-73.9901",
+        "ISP": "New York University"
+    },
+    {
+        "IP": "128.122.254.109",
+        "City": "New York City, New York",
+        "Country": "United States",
+        "Latitude": "40.7313",
+        "Longitude": "-73.9901",
+        "ISP": "New York University"
+    },
+    {
+        "IP": "128.122.254.68",
+        "City": "New York City, New York",
+        "Country": "United States",
+        "Latitude": "40.7313",
+        "Longitude": "-73.9901",
+        "ISP": "New York University"
+    },
+    {
+        "IP": "64.86.62.13",
+        "City": "New York City, New York",
+        "Country": "United States",
+        "Latitude": "40.7313",
+        "Longitude": "-73.9901",
+        "ISP": "Tata Communications"
+    },
+    {
+        "IP": "64.86.62.26",
+        "City": "Newark, New Jersey",
+        "Country": "United States",
+        "Latitude": "40.7357",
+        "Longitude": "-74.1724",
+        "ISP": "Tata Communications"
+    },
+    {
+        "IP": "104.27.165.239",
+        "City": "San Francisco, California",
+        "Country": "United States",
+        "Latitude": "37.7757",
+        "Longitude": "-122.3952",
+        "ISP": "CloudFlare Inc."
+    }
+]

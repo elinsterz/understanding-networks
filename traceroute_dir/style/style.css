@@ -12,9 +12,6 @@
     format('truetype');
 }
 
-/* div{
-    border: 0.1px red solid;
-} */
 
 html, body{
     background-color: #ECECEC !important;
@@ -49,7 +46,7 @@ html, body{
     
 }
 
-#nav-home>a, #nav-school>a, #nav-phone>a{
+#nav-home>a, #nav-school>a, #nav-cafe>a{
     color: white !important;
     text-decoration: none;
 }
@@ -69,7 +66,7 @@ html, body{
     text-decoration: none;
 }
 
-#nav-phone>a:hover, #nav-phone>a:active{
+#nav-cafe>a:hover, #nav-cafe>a:active{
     color: #92FAE3!important;
     text-decoration: none;
 }
@@ -98,7 +95,6 @@ html, body{
     border-right: 0.45vw black solid;
     height: 100vh;
     padding: 5%;
-    z-index: 1;
     position: fixed; /* Set the navbar to fixed position */
     top: 0; /* Position the navbar at the top of the page */
     width: 40%; 
@@ -123,38 +119,30 @@ html, body{
 #map-container{
     margin-top: 7vh;
     font-family: 'SharpGroteskBold21';
-    font-size: 1.75vw;
+    font-size: 2vw;
     color: black;
     align-items: center;
 }
 
-#overview-div{
-    height: 5vh;
-}
-
-#overview-div, #destination-div{
-    vertical-align: bottom;
+#destination-div{
     align-items: center;
     margin:auto;
-    border-bottom: 0.45vw solid black;
-    /* width: 18vw; */
-    float: left;
-    /* padding-bottom: 7vh; */
     align-items: center;
     justify-content: center;
-    height: 30px;
-    display: block;
+    height: 3vh;
+    display: inline-block;
 }
 
-#spacer{
-    height: 15vh;
+/* #home-p{
+    display: block;
 }
+*/
 
 #destination-div{
     /* border: 1px solid red; */
-    padding-bottom: 2%;
+    /* padding-bottom: 2%; */
+    display: inline-block;
 }
-
 
 
 #drop-down-triangle{
@@ -168,22 +156,11 @@ html, body{
     border: 1px solid red;
 } */
 
-/* #direction-div{
-    background-color: #ECECEC;
-    height: 100vh;
-    margin-top: 7vh;
-    overflow: scroll;
-    z-index: 1;
-    position: relative;
-    left: 45vw;
-} */
-
 #youtube-direction-div{
     background-color: #ECECEC;
     height: 100vh;
-    /* padding-left: 5%; */
     margin-top: 7vh;
-    overflow: scroll;
+    overflow: auto;
     z-index: 1;
     position: relative;
     left: 45vw;
@@ -192,9 +169,8 @@ html, body{
 #gmail-direction-div{
     background-color: #ECECEC;
     height: 100vh;
-    /* padding-left: 5%; */
     margin-top: 7vh;
-    overflow: scroll;
+    overflow: auto;
     z-index: 1;
     position: relative;
     left: 45vw;
@@ -211,7 +187,7 @@ html, body{
 
 .hop-ip{
     font-family: 'SharpGroteskBold21';
-    font-size: 1.755vw;
+    font-size: 1.75vw;
     color: black;
     line-height: 2.5vh;
 }
@@ -251,3 +227,80 @@ sup{
     padding-top: 2%;
     padding-bottom: 10%;
 }
+
+
+/* DROP DOWN MENU */
+/* div{
+    border: 0.1px red solid;
+} */
+
+.dropdown-button{
+    cursor: pointer;
+    background-color: #ECECEC;
+    color: black;
+    font-family: 'SharpGroteskBold21';
+    font-size: 2vw;
+    color: black;
+    line-height: 2vh;
+    width: 25vw;
+}
+
+#destination-button{
+    /* display: block; */
+    font-family: 'SharpGroteskBold21';
+    font-size:2vw;
+    color: black;
+    padding-top: 2vw;
+    padding-bottom: 1.5vw;
+    width: 25vw;
+} 
+
+.dropdown-menu {
+    position: relative;
+    display: inline-block;
+}
+
+#home-gmail:hover, #home-youtube:hover, #home-itsnice:hover {
+    background-color: lightgray;
+    /* color: #F8E71C; */
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #ECECEC;
+    /* min-width: 160px; */
+    overflow: auto;
+    z-index: 1;
+    width: 25vw;
+}
+
+.dropdown-content p {
+    color: black;
+    font-family: 'SharpGroteskBold21';
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.destination-dropdown-triangle{
+    visibility: visible;
+    width: 2vw;
+    padding-left: 5%;
+}
+
+  
+.dropdown a:hover {background-color: gray;}
+
+
+/* important! for showing all the traceroutes */
+.show {
+    display: block;
+}
+
+
+/* content divs with all traceroute paths*/
+#youtube-direction-div, #gmail-direction-div{
+    display: none;
+}
+
