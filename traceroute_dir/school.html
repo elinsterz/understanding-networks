@@ -21,12 +21,15 @@
 </head>
 
 <body>
+    <!--JS-->
+    <script src="school.js"></script>
+
     <!--HEADER NAV-->
     <nav id='navbar-header' class='navbar navbar-default navbar-fixed-top'>
         <div id='nav-container' class="container">
             <div id='nav-content' class='row'>
-                <div id='nav-title' class='col-6'>Traceroute Map</div>
-                <div id='nav-home' class='col-2'><a href="index.html">Home</a></div>
+                <div id='nav-title' class='col-6'><a href="index.html">Traceroute Hop Stop</a></div>
+                <div id='nav-home' class='col-2'><a href="home.html">Home</a></div>
                 <div id='nav-school' class='col-2'><a href="school.html">School</a></div>
                 <div id='nav-cafe' class='col-2'><a href="cafe.html">Coffee Shop</a></div>
             </div>
@@ -43,33 +46,605 @@
                     <!--DESTINATION DIV-->
                     <div id='destination-div'>
                         <p id='home-p'>School to</p>
-                        <p id='destination-p'>Destination <span><img src="style/assets/drop_down_triangle.svg"
-                                    id='drop-down-triangle' alt="drop down triangle"></span></p>
+
+                        <!--DROPDOWN MENU-->
+                        <button id='destination-button' class="dropdown-button">Select Destination</button>
+                        <div id='dropdown-menu' class='dropdown-content'>
+                            <p id='school-gmail'>Gmail</p>
+                            <p id='school-youtube'>Youtube</p>
+                            <p id='school-itsnice'>Its Nice That</p>
+                        </div>
                     </div>
                 </div>
             </div>
 
 
             <!--RIGHT DIV-->
+            <!--SCHOOL TO GMAIL DIV-->
+            <div class='col-7'>
+                <div id='school-gmail-div'>
+                    <h2 class='direction-h2'>Directions to Gmail</h2>
+                    <!--HOP DIV 1-->
+                    <div class="hop-div">
+                        <img src="style/assets/purple_circle_w_line.svg" class='circle-line-img' alt="purple circle">
 
-            <!--HOME TO YOUTUBE DIV-->
-            <div id='youtube-direction-div' class='col-7'>
-                <!--HOP DIV 1-->
-                <div class="hop-div">
-                    <img src="style/assets/purple_circle_w_line.svg" class='circle-line-img' alt="purple circle">
+                        <!--HOP 1-->
+                        <div class='hop-stop'>
+                            <p class='hop-ip'>10.18.0.2<sup class='hop-index'>1</sup></p>
+                            <p class='hop-isp'>New York University</p>
+                            <p class='hop-city'>New York City, United States</p>
+                        </div>
+                    </div>
 
-                    <!--HOP 1-->
-                    <div class='hop-stop'>
-                        <p class='hop-ip'>Placeholder<sup class='hop-index'>1</sup></p>
-                        <p class='hop-isp'>Placeholder text</p>
-                        <p class='hop-city'>placeholder text</p>
+                    <!--HOP DIV 2-->
+                    <div class="hop-div">
+                        <img src="style/assets/purple_circle_w_line.svg" class='circle-line-img' alt="purple circle">
+
+                        <!--HOP 2-->
+                        <div class='hop-stop'>
+                            <p class='hop-ip'>10.254.8.44<sup class='hop-index'>2</sup></p>
+                            <p class='hop-isp'>New York University</p>
+                            <p class='hop-city'>New York City, United States</p>
+                        </div>
+                    </div>
+
+                    <!--HOP DIV 3-->
+                    <div class="hop-div">
+                        <img src="style/assets/purple_circle_w_line.svg" class='circle-line-img' alt="purple circle">
+
+                        <!--HOP 3-->
+                        <div class='hop-stop'>
+                            <p class='hop-ip'>128.122.1.4<sup class='hop-index'>3</sup></p>
+                            <p class='hop-isp'>New York University</p>
+                            <p class='hop-city'>New York City, United States</p>
+                        </div>
+                    </div>
+
+                    <!--HOP DIV 4-->
+                    <div class="hop-div">
+                        <img src="style/assets/purple_circle_w_line.svg" class='circle-line-img' alt="purple circle">
+
+                        <!--HOP 4-->
+                        <div class='hop-stop'>
+                            <p class='hop-ip'>192.168.184.228<sup class='hop-index'>4</sup></p>
+                            <p class='hop-isp'>New York University</p>
+                            <p class='hop-city'>New York City, United States</p>
+                        </div>
+                    </div>
+
+                    <!--HOP DIV 5-->
+                    <div class="hop-div">
+                        <img src="style/assets/purple_circle_w_line.svg" class='circle-line-img' alt="purple circle">
+
+                        <!--HOP 5-->
+                        <div class='hop-stop'>
+                            <p class='hop-ip'>128.122.254.114<sup class='hop-index'>5</sup></p>
+                            <p class='hop-isp'>New York University</p>
+                            <p class='hop-city'>New York City, United States</p>
+                        </div>
+                    </div>
+
+                    <!--HOP DIV 6-->
+                    <div class="hop-div">
+                        <img src="style/assets/purple_circle_w_line.svg" class='circle-line-img' alt="purple circle">
+
+                        <!--HOP 6-->
+                        <div class='hop-stop'>
+                            <p class='hop-ip'>192.168.184.221<sup class='hop-index'>6</sup></p>
+                            <p class='hop-isp'>New York University</p>
+                            <p class='hop-city'>New York City, United States</p>
+                        </div>
+                    </div>
+
+                    <!--HOP DIV 7-->
+                    <div class="hop-div">
+                        <img src="style/assets/purple_circle_w_line.svg" class='circle-line-img' alt="purple circle">
+
+                        <!--HOP 7-->
+                        <div class='hop-stop'>
+                            <p class='hop-ip'>192.76.177.202<sup class='hop-index'>7</sup></p>
+                            <p class='hop-isp'>New York University</p>
+                            <p class='hop-city'>New York City, United States</p>
+                        </div>
+                    </div>
+
+                    <!--HOP DIV 8-->
+                    <div class="hop-div">
+                        <img src="style/assets/purple_circle_w_line.svg" class='circle-line-img' alt="purple circle">
+
+                        <!--HOP 8-->
+                        <div class='hop-stop'>
+                            <p class='hop-ip'>128.122.254.109<sup class='hop-index'>8</sup></p>
+                            <p class='hop-isp'>New York University</p>
+                            <p class='hop-city'>New York City, United States</p>
+                        </div>
+                    </div>
+
+                    <!--HOP DIV 9-->
+                    <div class="hop-div">
+                        <img src="style/assets/purple_circle_w_line.svg" class='circle-line-img' alt="purple circle">
+
+                        <!--HOP 9-->
+                        <div class='hop-stop'>
+                            <p class='hop-ip'>64.86.62.13<sup class='hop-index'>9</sup></p>
+                            <p class='hop-isp'>Tata Communications</p>
+                            <p class='hop-city'>New York City, United States</p>
+                        </div>
+                    </div>
+
+                    <!--HOP DIV 10-->
+                    <div class="hop-div">
+                        <img src="style/assets/purple_circle_w_line.svg" class='circle-line-img' alt="purple circle">
+
+                        <!--HOP 10-->
+                        <div class='hop-stop'>
+                            <p class='hop-ip'>64.86.62.26<sup class='hop-index'>10</sup></p>
+                            <p class='hop-isp'>Tata Communications</p>
+                            <p class='hop-city'>Newark, United States</p>
+                        </div>
+                    </div>
+
+                    <!--HOP DIV 11-->
+                    <div class="hop-div">
+                        <img src="style/assets/purple_circle_w_line.svg" class='circle-line-img' alt="purple circle">
+
+                        <!--HOP 11-->
+                        <div class='hop-stop'>
+                            <p class='hop-ip'>66.110.96.5<sup class='hop-index'>11</sup></p>
+                            <p class='hop-isp'>Tata Communications</p>
+                            <p class='hop-city'>New York City, United States</p>
+                        </div>
+                    </div>
+
+                    <!--HOP DIV 12-->
+                    <div class="hop-div">
+                        <img src="style/assets/purple_circle_w_line.svg" class='circle-line-img' alt="purple circle">
+
+                        <!--HOP 12-->
+                        <div class='hop-stop'>
+                            <p class='hop-ip'>72.14.195.232<sup class='hop-index'>12</sup></p>
+                            <p class='hop-isp'>Google LLC</p>
+                            <p class='hop-city'>Amsterdam, Netherlands</p>
+                        </div>
+                    </div>
+
+                    <!--HOP DIV 13-->
+                    <div class="hop-div">
+                        <img src="style/assets/purple_circle_w_line.svg" class='circle-line-img' alt="purple circle">
+
+                        <!--HOP 13-->
+                        <div class='hop-stop'>
+                            <p class='hop-ip'>***<sup class='hop-index'>13</sup></p>
+                        </div>
+                    </div>
+
+                    <!--HOP DIV 14-->
+                    <div class="hop-div">
+                        <img src="style/assets/purple_circle_w_line.svg" class='circle-line-img' alt="purple circle">
+
+                        <!--HOP 14-->
+                        <div class='hop-stop'>
+                            <p class='hop-ip'>108.170.237.212<sup class='hop-index'>14</sup></p>
+                            <p class='hop-isp'>Google LLC</p>
+                            <p class='hop-city'>Amsterdam, Netherlands</p>
+                        </div>
+                    </div>
+
+                    <!--HOP DIV 15-->
+                    <div class="hop-div">
+                        <img src="style/assets/purple_circle_w_line.svg" class='circle-line-img' alt="purple circle">
+
+                        <!--HOP 15-->
+                        <div class='hop-stop'>
+                            <p class='hop-ip'>209.85.244.64<sup class='hop-index'>15</sup></p>
+                            <p class='hop-isp'>Google LLC</p>
+                            <p class='hop-city'>Mountain View, United States</p>
+                        </div>
+                    </div>
+
+                    <!--HOP DIV 16-->
+                    <div class="hop-div">
+                        <img src="style/assets/purple_circle_w_line.svg" class='circle-line-img' alt="purple circle">
+
+                        <!--HOP 16-->
+                        <div class='hop-stop'>
+                            <p class='hop-ip'>108.170.248.99<sup class='hop-index'>16</sup></p>
+                            <p class='hop-isp'>Google LLC</p>
+                            <p class='hop-city'>Mountain View, United States</p>
+                        </div>
+                    </div>
+
+                    <!--HOP DIV 17-->
+                    <div class="hop-div">
+                        <img src="style/assets/purple_circle.svg" class='circle-line-img' alt="purple circle">
+
+                        <!--HOP 17-->
+                        <div class='hop-stop'>
+                            <p class='hop-ip'>172.217.12.165<sup class='hop-index'>17</sup></p>
+                            <p class='hop-isp'>Google LLC</p>
+                            <p class='hop-city'>Mountain View, United States</p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <!--SCHOOL TO ITSNICETHAT DIV-->
+            <div class='col-7'>
+                <div id='school-itsnice-div'>
+                    <h2 class='direction-h2'>Directions to Its Nice That</h2>
+
+                    <!--HOP DIV 1-->
+                    <div class="hop-div">
+                        <img src="style/assets/purple_circle_w_line.svg" class='circle-line-img' alt="purple circle">
+
+                        <!--HOP 1-->
+                        <div class='hop-stop'>
+                            <p class='hop-ip'>10.18.0.2<sup class='hop-index'>1</sup></p>
+                            <p class='hop-isp'>New York University</p>
+                            <p class='hop-city'>New York City, United States</p>
+                        </div>
+                    </div>
+
+                    <!--HOP DIV 2-->
+                    <div class="hop-div">
+                        <img src="style/assets/purple_circle_w_line.svg" class='circle-line-img' alt="purple circle">
+
+                        <!--HOP 2-->
+                        <div class='hop-stop'>
+                            <p class='hop-ip'>10.254.6.44<sup class='hop-index'>2</sup></p>
+                            <p class='hop-isp'>Verizon Communications Inc.</p>
+                            <p class='hop-city'>New York City, United States</p>
+                        </div>
+                    </div>
+
+                    <!--HOP DIV 3-->
+                    <div class="hop-div">
+                        <img src="style/assets/purple_circle_w_line.svg" class='circle-line-img' alt="purple circle">
+
+                        <!--HOP 3-->
+                        <div class='hop-stop'>
+                            <p class='hop-ip'>128.122.1.4<sup class='hop-index'>3</sup></p>
+                            <p class='hop-isp'>New York University</p>
+                            <p class='hop-city'>New York City, United States</p>
+                        </div>
+                    </div>
+
+                    <!--HOP DIV 4-->
+                    <div class="hop-div">
+                        <img src="style/assets/purple_circle_w_line.svg" class='circle-line-img' alt="purple circle">
+
+                        <!--HOP 4-->
+                        <div class='hop-stop'>
+                            <p class='hop-ip'>192.168.184.228<sup class='hop-index'>4</sup></p>
+                            <p class='hop-isp'>Verizon Communications Inc.</p>
+                            <p class='hop-city'>New York City, United States</p>
+                        </div>
+                    </div>
+
+                    <!--HOP DIV 5-->
+                    <div class="hop-div">
+                        <img src="style/assets/purple_circle_w_line.svg" class='circle-line-img' alt="purple circle">
+
+                        <!--HOP 5-->
+                        <div class='hop-stop'>
+                            <p class='hop-ip'>128.122.254.114<sup class='hop-index'>5</sup></p>
+                            <p class='hop-isp'>New York University</p>
+                            <p class='hop-city'>New York City, United States</p>
+                        </div>
+                    </div>
+
+                    <!--HOP DIV 6-->
+                    <div class="hop-div">
+                        <img src="style/assets/purple_circle_w_line.svg" class='circle-line-img' alt="purple circle">
+
+                        <!--HOP 6-->
+                        <div class='hop-stop'>
+                            <p class='hop-ip'>192.168.184.221<sup class='hop-index'>6</sup></p>
+                            <p class='hop-isp'>Verizon Communications Inc.</p>
+                            <p class='hop-city'>New York City, United States</p>
+                        </div>
+                    </div>
+
+                    <!--HOP DIV 7-->
+                    <div class="hop-div">
+                        <img src="style/assets/purple_circle_w_line.svg" class='circle-line-img' alt="purple circle">
+
+                        <!--HOP 7-->
+                        <div class='hop-stop'>
+                            <p class='hop-ip'>192.76.177.20<sup class='hop-index'>7</sup></p>
+                            <p class='hop-isp'>New York University</p>
+                            <p class='hop-city'>New York City, United States</p>
+                        </div>
+                    </div>
+
+                    <!--HOP DIV 8-->
+                    <div class="hop-div">
+                        <img src="style/assets/purple_circle_w_line.svg" class='circle-line-img' alt="purple circle">
+
+                        <!--HOP 8-->
+                        <div class='hop-stop'>
+                            <p class='hop-ip'>128.122.254.109<sup class='hop-index'>8</sup></p>
+                            <p class='hop-isp'>New York University</p>
+                            <p class='hop-city'>New York City, United States</p>
+                        </div>
+                    </div>
+
+                    <!--HOP DIV 9-->
+                    <div class="hop-div">
+                        <img src="style/assets/purple_circle_w_line.svg" class='circle-line-img' alt="purple circle">
+
+                        <!--HOP 9-->
+                        <div class='hop-stop'>
+                            <p class='hop-ip'>128.122.254.68<sup class='hop-index'>9</sup></p>
+                            <p class='hop-isp'>New York University</p>
+                            <p class='hop-city'>New York City, United States</p>
+                        </div>
+                    </div>
+
+                    <!--HOP DIV 10-->
+                    <div class="hop-div">
+                        <img src="style/assets/purple_circle_w_line.svg" class='circle-line-img' alt="purple circle">
+
+                        <!--HOP 10-->
+                        <div class='hop-stop'>
+                            <p class='hop-ip'>64.86.62.13<sup class='hop-index'>10</sup></p>
+                            <p class='hop-isp'>Tata Communications</p>
+                            <p class='hop-city'>New York City, United States</p>
+                        </div>
+                    </div>
+
+                    <!--HOP DIV 11-->
+                    <div class="hop-div">
+                        <img src="style/assets/purple_circle_w_line.svg" class='circle-line-img' alt="purple circle">
+
+                        <!--HOP 11-->
+                        <div class='hop-stop'>
+                            <p class='hop-ip'>64.86.62.26<sup class='hop-index'>11</sup></p>
+                            <p class='hop-isp'>Tata Communications</p>
+                            <p class='hop-city'>Newark, United States</p>
+                        </div>
+                    </div>
+
+                    <!--HOP DIV 12-->
+                    <div class="hop-div">
+                        <img src="style/assets/purple_circle.svg" class='circle-line-img' alt="purple circle">
+
+                        <!--HOP 12-->
+                        <div class='hop-stop'>
+                            <p class='hop-ip'>104.27.165.239<sup class='hop-index'>12</sup></p>
+                            <p class='hop-isp'>CloudFlare Inc.</p>
+                            <p class='hop-city'>San Francisco, United States</p>
+                        </div>
                     </div>
                 </div>
-
-
             </div>
+
+            <!--SCHOOL TO YOUTUBE DIV-->
+            <div class='col-7'>
+                <div id='school-youtube-div'>
+                    <h2 class='direction-h2'>Directions to Youtube</h2>
+
+                    <!--HOP DIV 1-->
+                    <div class="hop-div">
+                        <img src="style/assets/purple_circle_w_line.svg" class='circle-line-img' alt="purple circle">
+
+                        <!--HOP 1-->
+                        <div class='hop-stop'>
+                            <p class='hop-ip'>10.18.0.2<sup class='hop-index'>1</sup></p>
+                            <p class='hop-isp'>New York University</p>
+                            <p class='hop-city'>New York City, United States</p>
+                        </div>
+                    </div>
+
+                    <!--HOP DIV 2-->
+                    <div class="hop-div">
+                        <img src="style/assets/purple_circle_w_line.svg" class='circle-line-img' alt="purple circle">
+
+                        <!--HOP 2-->
+                        <div class='hop-stop'>
+                            <p class='hop-ip'>10.254.8.44<sup class='hop-index'>2</sup></p>
+                            <p class='hop-isp'>Verizon Communications Inc.</p>
+                            <p class='hop-city'>New York City, United States</p>
+                        </div>
+                    </div>
+
+                    <!--HOP DIV 3-->
+                    <div class="hop-div">
+                        <img src="style/assets/purple_circle_w_line.svg" class='circle-line-img' alt="purple circle">
+
+                        <!--HOP 3-->
+                        <div class='hop-stop'>
+                            <p class='hop-ip'>128.122.1.36<sup class='hop-index'>3</sup></p>
+                            <p class='hop-isp'>New York University</p>
+                            <p class='hop-city'>New York City, United States</p>
+                        </div>
+                    </div>
+
+                    <!--HOP DIV 4-->
+                    <div class="hop-div">
+                        <img src="style/assets/purple_circle_w_line.svg" class='circle-line-img' alt="purple circle">
+
+                        <!--HOP 4-->
+                        <div class='hop-stop'>
+                            <p class='hop-ip'>192.168.184.228<sup class='hop-index'>4</sup></p>
+                            <p class='hop-isp'>Verizon Communications Inc.</p>
+                            <p class='hop-city'>New York City, United States</p>
+                        </div>
+                    </div>
+
+                    <!--HOP DIV 5-->
+                    <div class="hop-div">
+                        <img src="style/assets/purple_circle_w_line.svg" class='circle-line-img' alt="purple circle">
+
+                        <!--HOP 5-->
+                        <div class='hop-stop'>
+                            <p class='hop-ip'>128.122.254.114<sup class='hop-index'>5</sup></p>
+                            <p class='hop-isp'>New York University</p>
+                            <p class='hop-city'>New York City, United States</p>
+                        </div>
+                    </div>
+
+                    <!--HOP DIV 6-->
+                    <div class="hop-div">
+                        <img src="style/assets/purple_circle_w_line.svg" class='circle-line-img' alt="purple circle">
+
+                        <!--HOP 6-->
+                        <div class='hop-stop'>
+                            <p class='hop-ip'>192.168.184.221<sup class='hop-index'>6</sup></p>
+                            <p class='hop-isp'>Verizon Communications Inc.</p>
+                            <p class='hop-city'>New York City, United States</p>
+                        </div>
+                    </div>
+
+                    <!--HOP DIV 7-->
+                    <div class="hop-div">
+                        <img src="style/assets/purple_circle_w_line.svg" class='circle-line-img' alt="purple circle">
+
+                        <!--HOP 7-->
+                        <div class='hop-stop'>
+                            <p class='hop-ip'>192.76.177.202<sup class='hop-index'>7</sup></p>
+                            <p class='hop-isp'>New York University</p>
+                            <p class='hop-city'>New York City, United States</p>
+                        </div>
+                    </div>
+
+                    <!--HOP DIV 8-->
+                    <div class="hop-div">
+                        <img src="style/assets/purple_circle_w_line.svg" class='circle-line-img' alt="purple circle">
+
+                        <!--HOP 8-->
+                        <div class='hop-stop'>
+                            <p class='hop-ip'>128.122.254.109<sup class='hop-index'>8</sup></p>
+                            <p class='hop-isp'>New York University</p>
+                            <p class='hop-city'>New York City, United States</p>
+                        </div>
+                    </div>
+
+                    <!--HOP DIV 9-->
+                    <div class="hop-div">
+                        <img src="style/assets/purple_circle_w_line.svg" class='circle-line-img' alt="purple circle">
+
+                        <!--HOP 9-->
+                        <div class='hop-stop'>
+                            <p class='hop-ip'>128.122.254.68<sup class='hop-index'>9</sup></p>
+                            <p class='hop-isp'>New York University</p>
+                            <p class='hop-city'>New York City, United States</p>
+                        </div>
+                    </div>
+
+                    <!--HOP DIV 10-->
+                    <div class="hop-div">
+                        <img src="style/assets/purple_circle_w_line.svg" class='circle-line-img' alt="purple circle">
+
+                        <!--HOP 10-->
+                        <div class='hop-stop'>
+                            <p class='hop-ip'>64.86.62.13<sup class='hop-index'>10</sup></p>
+                            <p class='hop-isp'>Tata Communications</p>
+                            <p class='hop-city'>New York City, United States</p>
+                        </div>
+                    </div>
+
+                    <!--HOP DIV 11-->
+                    <div class="hop-div">
+                        <img src="style/assets/purple_circle_w_line.svg" class='circle-line-img' alt="purple circle">
+
+                        <!--HOP 11-->
+                        <div class='hop-stop'>
+                            <p class='hop-ip'>64.86.62.26<sup class='hop-index'>11</sup></p>
+                            <p class='hop-isp'>Tata Communications</p>
+                            <p class='hop-city'>Newark, United States</p>
+                        </div>
+                    </div>
+
+                    <!--HOP DIV 12-->
+                    <div class="hop-div">
+                        <img src="style/assets/purple_circle_w_line.svg" class='circle-line-img' alt="purple circle">
+
+                        <!--HOP 12-->
+                        <div class='hop-stop'>
+                            <p class='hop-ip'>63.243.186.16<sup class='hop-index'>12</sup></p>
+                            <p class='hop-isp'>Tata Communications</p>
+                            <p class='hop-city'>New York City, United States</p>
+                        </div>
+                    </div>
+
+                    <!--HOP DIV 13-->
+                    <div class="hop-div">
+                        <img src="style/assets/purple_circle_w_line.svg" class='circle-line-img' alt="purple circle">
+
+                        <!--HOP 13-->
+                        <div class='hop-stop'>
+                            <p class='hop-ip'>66.110.96.5<sup class='hop-index'>13</sup></p>
+                            <p class='hop-isp'>Tata Communications</p>
+                            <p class='hop-city'>New York City, United States</p>
+                        </div>
+                    </div>
+
+                    <!--HOP DIV 14-->
+                    <div class="hop-div">
+                        <img src="style/assets/purple_circle_w_line.svg" class='circle-line-img' alt="purple circle">
+
+                        <!--HOP 14-->
+                        <div class='hop-stop'>
+                            <p class='hop-ip'>72.14.195.232<sup class='hop-index'>14</sup></p>
+                            <p class='hop-isp'>Google LLC</p>
+                            <p class='hop-city'>Amsterdam, Netherlands</p>
+                        </div>
+                    </div>
+
+                    <!--HOP DIV 15-->
+                    <div class="hop-div">
+                        <img src="style/assets/purple_circle_w_line.svg" class='circle-line-img' alt="purple circle">
+
+                        <!--HOP 15-->
+                        <div class='hop-stop'>
+                            <p class='hop-ip'>***<sup class='hop-index'>15</sup></p>
+                        </div>
+                    </div>
+
+                    <!--HOP DIV 16-->
+                    <div class="hop-div">
+                        <img src="style/assets/purple_circle_w_line.svg" class='circle-line-img' alt="purple circle">
+
+                        <!--HOP 16-->
+                        <div class='hop-stop'>
+                            <p class='hop-ip'>172.253.70.6<sup class='hop-index'>16</sup></p>
+                            <p class='hop-isp'>Google LLC</p>
+                            <p class='hop-city'>Amsterdam, Netherlands</p>
+                        </div>
+                    </div>
+
+                    <!--HOP DIV 17-->
+                    <div class="hop-div">
+                        <img src="style/assets/purple_circle_w_line.svg" class='circle-line-img' alt="purple circle">
+
+                        <!--HOP 17-->
+                        <div class='hop-stop'>
+                            <p class='hop-ip'>108.170.248.52<sup class='hop-index'>17</sup></p>
+                            <p class='hop-isp'>Google LLC</p>
+                            <p class='hop-city'>Mountain View, United States</p>
+                        </div>
+                    </div>
+
+                    <!--HOP DIV 18-->
+                    <div class="hop-div">
+                        <img src="style/assets/purple_circle.svg" class='circle-line-img' alt="purple circle">
+
+                        <!--HOP 18-->
+                        <div class='hop-stop'>
+                            <p class='hop-ip'>108.170.227.148<sup class='hop-index'>18</sup></p>
+                            <p class='hop-isp'>Google LLC</p>
+                            <p class='hop-city'>Mountain View, United States</p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
         </div>
     </div>
+
 
 </body>
 

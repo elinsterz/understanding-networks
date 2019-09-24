@@ -46,8 +46,13 @@ html, body{
     
 }
 
-#nav-home>a, #nav-school>a, #nav-cafe>a{
+#nav-title>a, #nav-home>a, #nav-school>a, #nav-cafe>a{
     color: white !important;
+    text-decoration: none;
+}
+
+#nav-title>a:hover{
+    color: rgb(196, 196, 196)!important;
     text-decoration: none;
 }
 
@@ -103,7 +108,7 @@ html, body{
 }
 
 /* for phone page -left side div */
-#phone-destination-div{
+#coffee-destination-div{
     background-color: #92FAE3;
     border-right: 0.45vw black solid;
     height: 100vh;
@@ -156,7 +161,17 @@ html, body{
     border: 1px solid red;
 } */
 
-#youtube-direction-div{
+.direction-h2{
+    font-family: 'SharpGroteskBold21';
+    font-size: 2vw;
+    color: black;
+    line-height: 2.5vh;
+    padding-top: 7vh;
+    /* text-transform: uppercase;
+    letter-spacing: 0.35pt; */
+}
+
+#youtube-direction-div, #gmail-direction-div, #itsnice-direction-div, #school-gmail-div, #school-youtube-div, #school-itsnice-div, #coffee-gmail-div, #coffee-youtube-div, #coffee-itsnice-div{
     background-color: #ECECEC;
     height: 100vh;
     margin-top: 7vh;
@@ -165,7 +180,7 @@ html, body{
     position: relative;
     left: 45vw;
 }
-
+/* 
 #gmail-direction-div{
     background-color: #ECECEC;
     height: 100vh;
@@ -174,7 +189,7 @@ html, body{
     z-index: 1;
     position: relative;
     left: 45vw;
-}
+} */
 
 .hop-div{
     margin-top: 5vh;
@@ -260,7 +275,7 @@ sup{
     display: inline-block;
 }
 
-#home-gmail:hover, #home-youtube:hover, #home-itsnice:hover {
+#home-gmail:hover, #home-youtube:hover, #home-itsnice:hover, #school-gmail:hover, #school-youtube:hover, #school-itsnice:hover, #coffee-gmail:hover, #coffee-youtube:hover, #coffee-itsnice:hover {
     background-color: lightgray;
     /* color: #F8E71C; */
 }
@@ -300,7 +315,48 @@ sup{
 
 
 /* content divs with all traceroute paths*/
-#youtube-direction-div, #gmail-direction-div{
+#youtube-direction-div, #gmail-direction-div, #itsnice-direction-div, #school-gmail-div,  #school-youtube-div,  #school-itsnice-div, #coffee-gmail-div, #coffee-youtube-div, #coffee-itsnice-div{
     display: none;
 }
 
+/* .not-visible-div{
+    display: none;
+} */
+
+
+/* Animation */
+
+@keyframes barberpole {
+    from { background-position: 0 0; }
+    to   { background-position: 0 -100vh; }
+  }
+
+
+.barbershop-pole {
+    width: 100vw;
+    height: 100vh;
+    margin: 0 auto;
+    background-color: #fff;
+    background-repeat: cover;
+    /* background-repeat: repeat-y; */
+    background-size: 200% 200%;
+    background-position: 0% 0%;
+    background-image: repeating-linear-gradient(-45deg, #F8E71C , #F8E71C 20px, #F8E71C 40px, #F8E71C 40px, #B15EDF 20px, #B15EDF 60px, #92FAE3 60px, #92FAE3 80px);
+    animation: barberpole 30s linear infinite;
+}
+.barbershop-pole:before {
+    content: '';
+    display: block;
+    box-sizing: border-box;
+    /* width: 100%;
+    height: 100%; */
+    z-index: 12;
+}
+/* @keyframes barberpole {
+    0% {
+        background-position: 0% 0%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+} */

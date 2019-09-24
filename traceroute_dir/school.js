@@ -5,9 +5,7 @@ window.addEventListener('load', init);
 function init() {
     //set up var
     let traceDiv = document.getElementById('trace-div');
-    let gmailLink = document.getElementById('home-youtube');
-    let dropDownTriangle = document.getElementsByClassName('drop-down-triangle');
-
+    // let dropDownTriangle = document.getElementsByClassName('drop-down-triangle');
 
     //if dropdown bar is clicked, display show class
     let dropDownButton = document.getElementById('destination-button');
@@ -17,18 +15,31 @@ function init() {
     window.addEventListener('click', showMenuContent);
 
 
-    //if youtubeLink is clicked, perform function that shows youtube traceroute
-    let youtubeLink = document.getElementById('home-youtube');
-    let youtubeHomeDir = document.getElementById('youtube-direction-div');
-    
-    let gmailLink = document.getElementById('home-gmail');
-    let gmailHomeDir = document.getElementById('gmail-direction-div');
+    //if x link is clicked, perform function that shows x traceroute
+    let schoolYoutubeLink = document.getElementById('school-youtube');
+    let schoolYoutubeHomeDir = document.getElementById('school-youtube-div');
 
-    console.log(youtubeLink);
-    console.log(youtubeHomeDir);
+    let schoolGmailLink = document.getElementById('school-gmail');
+    let schoolGmailHomeDir = document.getElementById('school-gmail-div');
 
-    youtubeLink.addEventListener('click', youtubeVisibility);
-    gmailLink.addEventListener('click', gmailVisibility);
+    let schoolItsNiceLink = document.getElementById('school-itsnice');
+    let schoolItsNiceHomeDir = document.getElementById('school-itsnice-div');
+
+
+    schoolYoutubeLink.addEventListener('click', () => {
+        updateDestination();
+        youtubeVisibility();
+    });
+
+    schoolGmailLink.addEventListener('click', () => {
+        updateDestination();
+        gmailVisibility();
+    });
+
+    schoolItsNiceLink.addEventListener('click', () => {
+        updateDestination();
+        itsNiceVisibility();
+    });
 
 }
 
@@ -54,39 +65,36 @@ function showMenuContent() {
 }
 
 
-
 function youtubeVisibility() {
-    let youtube = document.getElementById('youtube-direction-div');
-    let gmail = document.getElementById('gmail-direction-div');
+    let schoolYoutube = document.getElementById('school-youtube-div');
+    let schoolGmail = document.getElementById('school-gmail-div');
+    let schoolItsNice = document.getElementById('school-itsnice-div');
 
-    if (youtube.style.display == 'none') {
-        youtube.style.display = 'block';
-        gmail.style.display = 'none';
-    } else {
-        youtube.style.display = 'block';
-    }
+    schoolYoutube.style.display = 'block';
+    schoolGmail.style.display = 'none';
+    schoolItsNice.style.display = 'none';
 }
 
 function gmailVisibility() {
-    let youtube = document.getElementById('youtube-direction-div');
-    let gmail = document.getElementById('gmail-direction-div');
+    let schoolYoutube = document.getElementById('school-youtube-div');
+    let schoolGmail = document.getElementById('school-gmail-div');
+    let schoolItsNice = document.getElementById('school-itsnice-div');
 
-    if (gmail.style.display == 'none') {
-        youtube.style.display = 'none';
-        gmail.style.display = 'block';
-    } else {
-        gmail.style.display = 'block';
-    }
+    schoolYoutube.style.display = 'none';
+    schoolGmail.style.display = 'block';
+    schoolItsNice.style.display = 'none';
 }
 
+function itsNiceVisibility() {
+    let schoolYoutube = document.getElementById('school-youtube-div');
+    let schoolGmail = document.getElementById('school-gmail-div');
+    let schoolItsNice = document.getElementById('school-itsnice-div');
 
-
-/*show youtube traceroute*/
-function showGmailTrace() {
-    let gmailDiv = document.getElementById('gmail-direction-div');
-    gmailDiv.style.visibility = 'visible';
-    console.log('show gmail trace routes!');
+    schoolYoutube.style.display = 'none';
+    schoolGmail.style.display = 'none';
+    schoolItsNice.style.display = 'block';
 }
+
 
 function updateDestination() {
     //update the destination to be link selected
@@ -96,7 +104,7 @@ function updateDestination() {
         for (let j = 0; j < div[i].children.length; j++) {
             div[i].children[j].addEventListener('click', function () {
                 this.parentNode.previousElementSibling.innerHTML = this.innerHTML;
-            })
+            });
         }
     }
 }
