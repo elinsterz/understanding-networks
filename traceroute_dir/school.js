@@ -25,6 +25,8 @@ function init() {
     let schoolItsNiceLink = document.getElementById('school-itsnice');
     let schoolItsNiceHomeDir = document.getElementById('school-itsnice-div');
 
+    //get map id
+    let schoolGmailMap = document.getElementById('school-gmail-map');
 
     schoolYoutubeLink.addEventListener('click', () => {
         updateDestination();
@@ -79,10 +81,12 @@ function gmailVisibility() {
     let schoolYoutube = document.getElementById('school-youtube-div');
     let schoolGmail = document.getElementById('school-gmail-div');
     let schoolItsNice = document.getElementById('school-itsnice-div');
+    let schoolGmailMap = document.getElementById('school-gmail-map');
 
     schoolYoutube.style.display = 'none';
     schoolGmail.style.display = 'block';
     schoolItsNice.style.display = 'none';
+    schoolGmailMap.style.display = 'block';
 }
 
 function itsNiceVisibility() {

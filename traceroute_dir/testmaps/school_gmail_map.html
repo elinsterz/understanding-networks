@@ -1,0 +1,76 @@
+
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8' />
+    <title>Add a GeoJSON line</title>
+    <meta name='viewport' content='initial-scale=1,maximum-scale=1,user-scalable=no' />
+    <script src='https://api.tiles.mapbox.com/mapbox-gl-js/v1.4.0/mapbox-gl.js'></script>
+    <link href='https://api.tiles.mapbox.com/mapbox-gl-js/v1.4.0/mapbox-gl.css' rel='stylesheet' />
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+        }
+
+        #map {
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            width: 25%;
+            height: 40%;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div id='map'></div>
+    <script>
+        mapboxgl.accessToken = 'pk.eyJ1IjoiZWxpbnN0ZXJ6IiwiYSI6ImNqcmNxM3hlcDBqNXE0M2xwMHNyeGRvNnMifQ.QA0WaeMf75vyfZJGY2qpNA';
+        var map = new mapboxgl.Map({
+            container: 'map',
+            style: 'mapbox://styles/mapbox/streets-v11',
+            center: [-50, 37.830348],
+            zoom: 0.25
+        });
+
+        map.on('load', function () {
+
+            map.addLayer({
+                "id": "route",
+                "type": "line",
+                "source": {
+                    "type": "geojson",
+                    "data": {
+                        "type": "Feature",
+                        "properties": {},
+                        "geometry": {
+                            "type": "LineString",
+                            "coordinates": [
+                                [-73.9901, 40.7313],
+                                [-74.0050, 40.7199],
+                                [-74.1724, 40.7357],
+                                [4.8897, 52.3740],
+                                [-122.0785, 37.4060]
+                            ]
+                        }
+                    }
+                },
+                "layout": {
+                    "line-join": "round",
+                    "line-cap": "round"
+                },
+                "paint": {
+                    "line-color": "#888",
+                    "line-width": 4
+                }
+            });
+        });
+    </script>
+
+</body>
+
+</html>
