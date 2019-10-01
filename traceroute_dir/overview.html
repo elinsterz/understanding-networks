@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8' />
+    <title>Add a GeoJSON line</title>
+    <meta name='viewport' content='initial-scale=1,maximum-scale=1,user-scalable=no' />
+
+
+    <!--Bootstrap-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css"
+        integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+
+    <!--p5js script-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.7.3/p5.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.7.3/addons/p5.dom.min.js"></script>
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.7.3/addons/p5.sound.min.js"></script>  -->
+
+    <!--mapbox script-->
+    <script src='https://api.tiles.mapbox.com/mapbox-gl-js/v1.4.0/mapbox-gl.js'></script>
+    <link href='https://api.tiles.mapbox.com/mapbox-gl-js/v1.4.0/mapbox-gl.css' rel='stylesheet' />
+
+    <!--Stylesheet-->
+    <link rel="stylesheet" href="style/style.css">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+        }
+
+        #map {
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            width: 100%;
+            z-index: 0;
+        }
+    </style>
+</head>
+
+<body>
+    <!--HEADER NAV-->
+    <nav id='navbar-header' class='navbar navbar-default navbar-fixed-top'>
+        <div id='nav-container' class="container">
+            <div id='nav-content' class='row'>
+                <div id='nav-title' class='col-4'><a href="index.html">Traceroute Hop Stop</a></div>
+                <div id='nav-home' class='col-2'><a href="home.html">Home</a></div>
+                <div id='nav-school' class='col-2'><a href="school.html">School</a></div>
+                <div id='nav-cafe' class='col-2'><a href="cafe.html">Coffee Shop</a></div>
+                <div id='nav-overview' class='col-2'><a href="overview.html">Overview</a></div>
+            </div>
+        </div>
+    </nav>
+
+
+    <div id='overview-map'></div>
+    <script>
+        mapboxgl.accessToken = 'pk.eyJ1IjoiZWxpbnN0ZXJ6IiwiYSI6ImNrMTc5ZGJobjE2NW4zYm5pMWNidmt1dGMifQ.HVnwEr8h0zmRLC-U1Ak0Xg';
+        var map = new mapboxgl.Map({
+            container: 'overview-map',
+            style: 'mapbox://styles/mapbox/light-v10',
+            center: [-74.0060, 40.7143],
+            zoom: 2
+        });
+
+        map.on('load', function () {
+
+            map.addLayer({
+                "id": "points",
+                "type": "symbol",
+                "source": {
+                    "type": "geojson",
+                    "data": {
+                        "type": "FeatureCollection",
+                        "features": [{
+                            "type": "Feature",
+                            "geometry": {
+                                "type": "Point",
+                                "coordinates": [-74.0060, 40.7143]
+                            },
+                            "properties": {
+                                "title": "Verizon Communications Inc.",
+                                "icon": "monument"
+                            }
+                        }, {
+                            "type": "Feature",
+                            "geometry": {
+                                "type": "Point",
+                                "coordinates": [-74.0060, 40.7143]
+                            },
+                            "properties": {
+                                "title": "ANS Core Systems Inc.",
+                                "icon": "monument"
+                            }
+                        }, {
+                            "type": "Feature",
+                            "geometry": {
+                                "type": "Point",
+                                "coordinates": [4.8897, 52.3740]
+                            },
+                            "properties": {
+                                "title": "Google LLC",
+                                "icon": "monument"
+                            }
+                        }, {
+                            "type": "Feature",
+                            "geometry": {
+                                "type": "Point",
+                                "coordinates": [-122.0785, 37.4060]
+                            },
+                            "properties": {
+                                "title": "Google LLC",
+                                "icon": "monument"
+                            }
+                        }, {
+                            "type": "Feature",
+                            "geometry": {
+                                "type": "Point",
+                                "coordinates": [-73.9901, 40.7313]
+                            },
+                            "properties": {
+                                "title": "New York University",
+                                "icon": "monument"
+                            }
+                        },{
+                            "type": "Feature",
+                            "geometry": {
+                                "type": "Point",
+                                "coordinates": [-74.0008, 40.7397]
+                            },
+                            "properties": {
+                                "title": "Tata Communications",
+                                "icon": "monument"
+                            }
+                        },{
+                            "type": "Feature",
+                            "geometry": {
+                                "type": "Point",
+                                "coordinates": [-122.3952, 37.7757]
+                            },
+                            "properties": {
+                                "title": "CloudFlare Inc.",
+                                "icon": "monument"
+                            }
+                        },
+                        {
+                            "type": "Feature",
+                            "geometry": {
+                                "type": "Point",
+                                "coordinates": [-74.1724, 40.7357]
+                            },
+                            "properties": {
+                                "title": "Tata Communications",
+                                "icon": "monument"
+                            }
+                        },{
+                            "type": "Feature",
+                            "geometry": {
+                                "type": "Point",
+                                "coordinates": [-77.4481, 38.9517]
+                            },
+                            "properties": {
+                                "title": "ANS Core Systems Inc.",
+                                "icon": "monument"
+                            }
+                        },{
+                            "type": "Feature",
+                            "geometry": {
+                                "type": "Point",
+                                "coordinates": [-96.8067, 32.7831]
+                            },
+                            "properties": {
+                                "title": "GTT Communications Inc.",
+                                "icon": "monument"
+                            }
+                        },
+                        
+                        ]
+                    }
+                },
+                "layout": {
+                    "icon-image": "{icon}-15",
+                    "text-field": "{title}",
+                    "text-font": ["Arial Unicode MS Bold"],
+                    "text-offset": [0, 0.6],
+                    "text-anchor": "top"
+                }
+            });
+        });
+    </script>
+    </script>
+
+
+</body>
+
+</html>
+
+
+
+<!-- <script>
+        mapboxgl.accessToken = 'pk.eyJ1IjoiZWxpbnN0ZXJ6IiwiYSI6ImNrMTc5ZGJobjE2NW4zYm5pMWNidmt1dGMifQ.HVnwEr8h0zmRLC-U1Ak0Xg';
+        var map = new mapboxgl.Map({
+            container: 'overview-map',
+            style: 'mapbox://styles/mapbox/light-v10',
+            center: [-40, 37.830348],
+            zoom: 2.25
+        });
+
+        map.on('load', function () {
+
+            //school 2 gmail - purple
+            map.addLayer({
+                "id": "school route",
+                "type": "line",
+                "source": {
+                    "type": "geojson",
+                    "data": {
+                        "type": "Feature",
+                        "properties": {},
+                        "geometry": {
+                            "type": "LineString",
+                            "coordinates": [
+                                [-73.9901, 40.7313],
+                                [-74.0050, 40.7199],
+                                [-74.1724, 40.7357],
+                                [4.8897, 52.3740],
+                                [-122.0785, 37.4060]
+                            ]
+                        }
+                    }
+                },
+                "layout": {
+                    "line-join": "round",
+                    "line-cap": "round"
+                },
+                "paint": {
+                    "line-color": "#B15EDF",
+                    "line-width": 6
+                }
+            });
+
+            //cafe 2 gmail - turquoise
+            map.addLayer({
+                "id": "cafe route",
+                "type": "line",
+                "source": {
+                    "type": "geojson",
+                    "data": {
+                        "type": "Feature",
+                        "properties": {},
+                        "geometry": {
+                            "type": "LineString",
+                            "coordinates": [
+                                [-74.0060, 40.7313],
+                                [-77.4481, 38.9517],
+                                [-74.0060, 40.7143],
+                                [4.8897, 52.3740]
+                            ]
+                        }
+                    }
+                },
+                "layout": {
+                    "line-join": "round",
+                    "line-cap": "round"
+                },
+                "paint": {
+                    "line-color": "#92FAE3",
+                    "line-width": 6
+                }
+            });
+
+            //home to gmail - yellow
+            map.addLayer({
+                "id": "home route",
+                "type": "line",
+                "source": {
+                    "type": "geojson",
+                    "data": {
+                        "type": "Feature",
+                        "properties": {},
+                        "geometry": {
+                            "type": "LineString",
+                            "coordinates": [
+                                [-74.0060, 40.7143],
+                                [4.8897, 52.3740],
+                                [-122.0785, 37.4060]
+                            ]
+                        }
+                    }
+                },
+                "layout": {
+                    "line-join": "round",
+                    "line-cap": "round"
+                },
+                "paint": {
+                    "line-color": "#F8E71C",
+                    "line-width": 6
+                }
+            });
+
+        });
+    </script> -->

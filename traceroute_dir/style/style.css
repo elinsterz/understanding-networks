@@ -17,7 +17,7 @@ html, body{
     background-color: #ECECEC !important;
     box-sizing: border-box;
     max-width: 100%;
-    overflow-x: hidden;
+    overflow-x: auto;
 }
 
 /* NAVBAR */
@@ -46,7 +46,7 @@ html, body{
     
 }
 
-#nav-title>a, #nav-home>a, #nav-school>a, #nav-cafe>a{
+#nav-title>a, #nav-home>a, #nav-school>a, #nav-cafe>a, #nav-overview>a{
     color: white !important;
     text-decoration: none;
 }
@@ -76,9 +76,42 @@ html, body{
     text-decoration: none;
 }
 
+#nav-overview>a:hover{
+    color: rgb(196, 196, 196)!important;
+    text-decoration:none;
+}
 
 
-/* LEFT MAP DIV */
+
+/* MAP */
+#map {
+    position: absolute;
+    top: 12vh;
+    left: 0vw;
+    width: 80vw;
+    height: 30vh;
+    z-index: 4;
+    display: block;
+    visibility: visible;
+}
+
+#map2, #map3, #map4, #map5, #map6, #map7, #map8, #map9 {
+    position: absolute;
+    top: 12vh;
+    left: 0vw;
+    width: 80vw;
+    z-index: 3;
+    height: 30vh;
+    z-index: 4;
+    display: block;
+    visibility: visible;
+}
+
+
+#overview-map{
+    width: 100vw;
+    height: 100vh;
+}
 
 /* for home page -left side div */
 #map-destination-div{
@@ -90,7 +123,6 @@ html, body{
     position: fixed; /* Set the navbar to fixed position */
     top: 0; /* Position the navbar at the top of the page */
     width: 40%; 
-    height: 100vh;
     z-index: 2;
 }
 
@@ -175,10 +207,11 @@ html, body{
     background-color: #ECECEC;
     height: 100vh;
     margin-top: 7vh;
-    overflow: auto;
+    overflow-y: auto;
     z-index: 1;
     position: relative;
     left: 45vw;
+    overflow-x: hidden;
 }
 /* 
 #gmail-direction-div{
@@ -191,8 +224,12 @@ html, body{
     left: 45vw;
 } */
 
+.hop-div-container{
+    margin-top: 38vh;
+}
+
 .hop-div{
-    margin-top: 5vh;
+    margin-top: 3vh;
     /* padding: 2%; */
 }
 
@@ -230,6 +267,7 @@ sup{
 }
 
 .circle-line-img {
+    padding-top: 1vh;
     padding-right: 5vw;
     display: inline-block;
 }

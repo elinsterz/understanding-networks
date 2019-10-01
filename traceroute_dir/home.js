@@ -25,12 +25,16 @@ function init() {
     let itsNiceLink = document.getElementById('home-itsnice');
     let itsNiceHomeDir = document.getElementById('itsnice-direction-div');
 
+    let homeYoutubeMap = document.getElementById('map-home-youtube');
+    
+
     console.log(youtubeLink);
     console.log(youtubeHomeDir);
 
     youtubeLink.addEventListener('click', ()=> {
         youtubeVisibility();
         updateDestination();
+        homeYoutubeMap.style.display = 'block';
     });
 
     gmailLink.addEventListener('click', ()=> {
