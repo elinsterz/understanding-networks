@@ -6,10 +6,27 @@
 //3. on click the client should send a "drawLine" message to the server when we are moving the mouse.
 
 // client side code
-var socket = io.connect();
-socket.emit('create', 'room1');
+// let socket = io.connect();
+// Open and connect input socket
+let socket = io();
+
+// socket.emit('create', 'room1');
+// Listen for confirmation of connection
+socket.on('connect', function () {
+   console.log("Connected");
+});
+
+// Listen to see if user can't connect
+socket.on('stopconnection', function (data) {
+   console.log(data);
+   console.log('cant connect');
+   showText();
+});
 
 document.addEventListener("DOMContentLoaded", function () {
+   ////* SOCKET */////  
+
+   //////* DRAWING */////
    var mouse = {
       click: false,
       move: false,
@@ -35,8 +52,8 @@ document.addEventListener("DOMContentLoaded", function () {
       // normalize mouse position to range 0.0 - 1.0
       mouse.pos.x = e.clientX / width;
       mouse.pos.y = e.clientY / height;
-      console.log('mouse position x: ' + mouse.pos.x);
-      console.log('mouse position y: ' + mouse.pos.y);
+      // console.log('mouse position x: ' + mouse.pos.x);
+      // console.log('mouse position y: ' + mouse.pos.y);
       mouse.move = true;
    };
 
@@ -66,6 +83,7 @@ document.addEventListener("DOMContentLoaded", function () {
    }
    mainLoop();
 
+   ////////* TIMER *///////
    let startButton = document.getElementById('start-button');
    startButton.addEventListener('click', clock);
 
@@ -84,9 +102,14 @@ document.addEventListener("DOMContentLoaded", function () {
          }
       }
    }
-
-
 });
+
+// Display text
+function showText() {
+   // removeElements();
+   document.getElementById('connection-message').innerHTML = "can't connect. another user already connected!"
+}
+
 
 
 
