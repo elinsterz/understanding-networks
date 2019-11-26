@@ -23,6 +23,7 @@ socket.on('stopconnection', function (data) {
    showText();
 });
 
+
 document.addEventListener("DOMContentLoaded", function () {
    ////* SOCKET */////  
 
@@ -84,14 +85,16 @@ document.addEventListener("DOMContentLoaded", function () {
    mainLoop();
 
    ////////* TIMER *///////
-   let startButton = document.getElementById('start-button');
-   startButton.addEventListener('click', clock);
+   // let startButton = document.getElementById('start-button');
+   // startButton.addEventListener('click', clock);
 
    let myTimer;
-   function clock() {
-      console.log('start button is clicked!');
+   let countdown = 1000;
 
-      myTimer = setInterval(myClock, 1000);
+   function clock() {
+      console.log('start timer!');
+
+      myTimer = setInterval(myClock, countdown);
       let seconds = 30;
 
       function myClock() {
@@ -99,9 +102,14 @@ document.addEventListener("DOMContentLoaded", function () {
          if (seconds == 0) {
             clearInterval(myTimer);
             alert("Reached zero");
+            socket.emit('stopTimer', stopTimer)
          }
       }
    }
+
+   //listen for startTimer function from server
+   socket.on('startTimer', clock());
+
 });
 
 // Display text
@@ -110,7 +118,10 @@ function showText() {
    document.getElementById('connection-message').innerHTML = "can't connect. another user already connected!"
 }
 
-
+function stopTimer(){
+   console.log('stop timer!')
+   document.getElementById('timerDiv').innerHTML = 'time is up!'; 
+}
 
 
 
