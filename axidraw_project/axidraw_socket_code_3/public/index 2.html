@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Drawing Test</title>
+
+    <!--style-->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!--scripts-->
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="main.js"></script>
+
+    <!--timer-->
+    <div>
+        <!--start and stop-->
+        <button id = 'start-button'>start</button>
+        <!-- <button id = 'stop-button'>stop</button> -->
+
+        <div>You have <span id="timerDisplay">00:30</span> seconds left to draw!</div>
+    
+        <!--message about connection-->
+        <p id = 'connection-message'>are you connected?</p>
+    </div>
+
+    <!--canvas-->
+    <canvas id="drawing">
+    </canvas>
+
+</body>
+
+</html>

@@ -2,7 +2,7 @@ const express = require('express');
 const app = express();
 const http = require('http').Server(app);
 const io = require('socket.io')(http);
-const port = process.env.PORT || 3010;
+const port = process.env.PORT || 3012;
 
 app.use(express.static(__dirname + '/public'));
 
@@ -37,6 +37,13 @@ io.on('connection', function (socket) {
         console.log('Disconnected...')
         return
     }
+
+    // socket.emit('startTimer');
+
+    socket.on('stopTimer', function(){
+        console.log('stop timer!');
+    });
+
 
     //first send the history to the new client
     for (let i in lineHistory) {
