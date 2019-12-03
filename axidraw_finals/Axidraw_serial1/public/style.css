@@ -1,0 +1,69 @@
+html{
+    background-color: #FFF7BA;
+    font-family: aktiv-grotesk-extended, sans-serif;
+    height: 100%;
+    margin-top: 3%;
+    margin-left: 8%;
+    margin-right: 8%;
+}
+
+.arrowButtons{
+    width: 12%;
+    padding: 1.5%;
+}
+
+#arrow-container{
+    position: fixed;
+    display: inline-block;
+    top: 18%;
+    left: 5%;
+}
+
+#sketch-holder{
+    border: 0.25em solid black;
+    display: inline-block;
+    width: 400px;
+    height: 600px;
+    position:fixed;
+    top: 18%;
+    left: 45%;
+}
+
+/* text */
+#h1-title {
+    font-family: aktiv-grotesk-extended, sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 2.5em;
+    text-align: center;
+    position: fixed;
+    z-index: 1;
+}
+
+/* div{
+    border: 1px red solid;
+} */
+
+/* SCROLL BAR */
+    /* width */
+    ::-webkit-scrollbar {
+        width: 2.5vw;
+      }
+  
+      /* Track */
+      ::-webkit-scrollbar-track {
+        /*box-shadow: inset 0 0 5px white; */
+        background: black;
+        /* border-radius: 10px; */
+      }
+  
+      /* Handle */
+      ::-webkit-scrollbar-thumb {
+        background: #FFFBDE;
+        /* border-radius: 10px; */
+      }
+  
+      /* Handle on hover */
+      ::-webkit-scrollbar-thumb:hover {
+        background: #FFE94F;
+      }
