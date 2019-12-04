@@ -57,7 +57,7 @@ io.sockets.on('connection',
                 console.log("Received: 'mouse' " + data.x + " " + data.y);
 
                 // Send it to all other clients
-                socket.broadcast.emit('mouse', data);
+                socket.broadcast.emit('mouseServerToClient', data);
 
                 // This is a way to send to everyone including sender
                 // io.sockets.emit('message', "this goes to everyone");

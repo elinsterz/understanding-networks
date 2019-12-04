@@ -21,7 +21,9 @@ function setup() {
     socket = io.connect('http://localhost:8080');
     // We make a named event called 'mouse' and write an
     // anonymous callback function
-    socket.on('mouse',
+    // socket.on ('mouse', drawEllipse);
+
+    socket.on('mouseServerToClient',
         // When we receive data
         function (data) {
             console.log("Got: " + data.x + " " + data.y);
@@ -38,7 +40,7 @@ function sendmouse(xpos, ypos) {
     // We are sending!
     console.log("sendmouse: " + xpos + " " + ypos);
 
-    // Make a little object with  and y
+    // Make a little object with x and y
     var data = {
         x: xpos,
         y: ypos
